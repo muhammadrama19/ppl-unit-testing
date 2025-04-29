@@ -77,9 +77,15 @@ This project is a software under test include its unit testing for Software Test
 ```
 
 ## How to Run
-1. Ensure you have Java 17 or later installed on your system.
+1. Ensure you have Java 17 or later installed on your system and Maven
 2. Clone this repository to your local machine.
+   ```
+   https://github.com/muhammadrama19/ppl-unit-testing.git
+   ```
 3. Navigate to the project directory.
+   ```
+   cd ppl-unit-testing
+   ```
 4. Compile the project using Maven:
    ```
    mvn clean install
