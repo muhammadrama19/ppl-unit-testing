@@ -1,0 +1,74 @@
+package com.calculator.components.calculator;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import com.calculator.components.Calculator;
+
+public class SubtractTest {
+    private Calculator calc;
+
+    @Before
+    public void setUp() throws Exception {
+        calc = new Calculator();
+    }
+
+    @Test
+    public void testPenguranganBilanganPositif() {
+        // (1) setup data
+        int AngkaPertama = 100;
+        int AngkaKedua = 100;
+        
+        // (2) panggil method yang akan di test
+        double result = calc.subtract((double)AngkaPertama, (double)AngkaKedua);
+        
+        // (3) bandingkan hasilnya dengan yang diharapkan
+        int expected = 0;
+        assertEquals(expected, result, 0.01);
+    }
+
+    @Test
+    public void testPenguranganBilanganNegatif() {
+        // (1) setup data
+        int AngkaPertama = -100;
+        int AngkaKedua = -200;
+        
+        // (2) panggil method yang akan di test
+        double result = calc.subtract((double)AngkaPertama, (double)AngkaKedua);
+        
+        // (3) bandingkan hasilnya dengan yang diharapkan
+        int expected = 100;
+        assertEquals(expected, result, 0.01);
+    }
+
+    @Test
+    public void testPenguranganBilanganPositifNegatif() {
+        // (1) setup data
+        int AngkaPertama = 100;
+        int AngkaKedua = -200;
+        
+        // (2) panggil method yang akan di test
+        double result = calc.subtract((double)AngkaPertama, (double)AngkaKedua);
+        
+        // (3) bandingkan hasilnya dengan yang diharapkan
+        int expected = 300;
+        assertEquals(expected, result, 0.01);
+    }
+
+    @Test
+    public void testPenguranganBilanganNol() {
+        // (1) setup data
+        int AngkaPertama = 0;
+        int AngkaKedua = 0;
+        
+        // (2) panggil method yang akan di test
+        double result = calc.subtract((double)AngkaPertama, (double)AngkaKedua);
+        
+        // (3) bandingkan hasilnya dengan yang diharapkan
+        int expected = 0;
+        assertEquals(expected, result, 0.01);
+    }
+
+}
