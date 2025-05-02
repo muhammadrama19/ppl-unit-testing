@@ -1,6 +1,6 @@
 # Calculator Application
 
-# Author
+## Author
 - Aryo Rakatama (221524003)
 - Muhamad Mathar Rizqi (221524014)
 - Muhammad Rama Nurimani (221524021)
@@ -9,7 +9,8 @@
 This project is a software under test include its unit testing for Software Testing Course in JTK POLBAN, it is simple calculator application built in Java. It provides basic arithmetic operations such as addition, subtraction, multiplication, and division. 
 
 ## Features
-- Addition, subtraction, multiplication, and division operations.
+- Addition, subtraction, multiplication, and division operations. 
+- Input within structure `number number operator`
 - Input validation to ensure numbers are within a valid range.
 - Error handling for invalid inputs and division by zero.
 - Interactive console-based user interface.
