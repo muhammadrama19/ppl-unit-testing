@@ -35,8 +35,7 @@ public class Calculator {
             case '/':
                 return divide(firstNumber, secondNumber);
             default:
-                System.out.println("Invalid operator. Please enter a valid operator.");
-                return 0;
+                throw new IllegalArgumentException("Invalid operator. Please enter a valid operator.");
         }
     }
 }
