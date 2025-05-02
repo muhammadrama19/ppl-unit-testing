@@ -1,5 +1,10 @@
 # Calculator Application
 
+# Author
+- Aryo Rakatama (221524003)
+- Muhamad Mathar Rizqi (221524014)
+- Muhammad Rama Nurimani (221524021)
+
 ## Overview
 This project is a software under test include its unit testing for Software Testing Course in JTK POLBAN, it is simple calculator application built in Java. It provides basic arithmetic operations such as addition, subtraction, multiplication, and division. 
 
@@ -102,3 +107,4 @@ This project is a software under test include its unit testing for Software Test
 This project uses the following dependencies:
 - JUnit 4.13.2 for unit testing.
 - Surefire for reporting
+- Maven for Build Tools
