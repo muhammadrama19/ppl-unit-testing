@@ -1,5 +1,4 @@
-target
-target/
-target/*
+# Ignore all files and folders in the target directory except the site folder
+/target/*
+!/target/site/
 .idea
-!target/site/
