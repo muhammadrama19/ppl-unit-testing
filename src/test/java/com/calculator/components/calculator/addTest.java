@@ -18,56 +18,56 @@ public class AddTest {
     @Test
     public void testPenambahanBilanganPositif() {
         // (1) setup data
-        int AngkaPertama = 50;
-        int AngkaKedua = 100;
-        
+        double AngkaPertama = 50;
+        double AngkaKedua = 100;
+
         // (2) panggil method yang akan di test
-        int result = (int)calc.add((double)AngkaPertama, (double)AngkaKedua);
-        
+        double result = calc.add(AngkaPertama, AngkaKedua);
+
         // (3) bandingkan hasilnya dengan yang diharapkan
-        int expected = 150;
-        assertEquals(expected, result);
+        double expected = 150;
+        assertEquals(expected, result, 0.01);
     }
 
     @Test
     public void testPenambahanBilanganNegatif() {
         // (1) setup data
-        int AngkaPertama = -50;
-        int AngkaKedua = -100;
-        
+        double AngkaPertama = -50;
+        double AngkaKedua = -100;
+
         // (2) panggil method yang akan di test
-        int result = (int)calc.add((double)AngkaPertama, (double)AngkaKedua);
-        
+        double result = calc.add(AngkaPertama, AngkaKedua);
+
         // (3) bandingkan hasilnya dengan yang diharapkan
-        int expected = -150;
-        assertEquals(expected, result);
+        double expected = -150;
+        assertEquals(expected, result, 0.01);
     }
 
     @Test
     public void testPenambahanBilanganNol() {
         // (1) setup data
-        int AngkaPertama = 0;
-        int AngkaKedua = 0;
-        
+        double AngkaPertama = 0;
+        double AngkaKedua = 0;
+
         // (2) panggil method yang akan di test
-        int result = (int)calc.add((double)AngkaPertama, (double)AngkaKedua);
-        
+        double result = calc.add(AngkaPertama, AngkaKedua);
+
         // (3) bandingkan hasilnya dengan yang diharapkan
-        int expected = 0;
-        assertEquals(expected, result);
+        double expected = 0;
+        assertEquals(expected, result, 0.01);
     }
 
     @Test
     public void testPenambahanBilanganPositifDanNegatif() {
         // (1) setup data
-        int AngkaPertama = 100;
-        int AngkaKedua = -200;
-        
+        double AngkaPertama = 100;
+        double AngkaKedua = -200;
+
         // (2) panggil method yang akan di test
-        int result = (int)calc.add((double)AngkaPertama, (double)AngkaKedua);
-        
+        double result = calc.add(AngkaPertama, AngkaKedua);
+
         // (3) bandingkan hasilnya dengan yang diharapkan
-        int expected = -100;
-        assertEquals(expected, result);
+        double expected = -100;
+        assertEquals(expected, result, 0.01);
     }
 }
