@@ -24,9 +24,8 @@ public class Display {
         System.out.println("( * ) Division");
     }
 
-    public char getOperator() {
+    public char getOperator(Scanner scanner) {
         displayMenu();
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the operator: ");
         char operator = scanner.nextLine().charAt(0);
         if (!validator.isValidOperator(operator)) {
@@ -36,9 +35,8 @@ public class Display {
         return operator;
     }
 
-    public void input() {
+    public void input(Scanner scanner) {
         System.out.println("Enter the first number: ");
-        Scanner scanner = new Scanner(System.in);
         Object firstInput = helper.stringToDouble(scanner.nextLine());
         if (!validator.isNumberValid(firstInput)) {
             System.out.println("Invalid input. Please enter a valid number.");
@@ -54,7 +52,7 @@ public class Display {
         
         double firstNumber = ((Double) firstInput);
         double secondNumber = ((Double) secondInput);
-        char operator = getOperator();
+        char operator = getOperator(scanner);
         
         if (operator == '/' && !validator.isNotDividedByZero((secondNumber))) {
             System.out.println("Cannot divide by zero. Please enter a valid number.");
