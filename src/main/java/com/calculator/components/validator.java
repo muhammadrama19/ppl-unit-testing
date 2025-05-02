@@ -1,6 +1,6 @@
 package com.calculator.components;
 
-public class validator {
+public class Validator {
     public boolean isNumberValid(Object parameter) {
         if (parameter instanceof Number) {
             double number = ((Number) parameter).doubleValue();

@@ -1,6 +1,6 @@
 package com.calculator.components;
 
-public class helper {
+public class Helper {
     public Object stringToDouble(String str) {
         try {
             return Double.parseDouble(str);

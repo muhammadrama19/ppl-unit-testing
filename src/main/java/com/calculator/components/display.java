@@ -2,10 +2,10 @@ package com.calculator.components;
 
 import java.util.Scanner;
 
-public class display {
-    private validator validator = new validator();
-    private helper helper = new helper();
-    private calculator calc = new calculator();
+public class Display {
+    private Validator validator = new Validator();
+    private Helper helper = new Helper();
+    private Calculator calc = new Calculator();
 
     public void displayHeader() {
         System.err.println("--------------------------");

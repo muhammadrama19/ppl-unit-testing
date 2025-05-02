@@ -1,7 +1,7 @@
 package com.calculator.components;
 
-public class calculator {
-    private validator validator = new validator();
+public class Calculator {
+    private Validator validator = new Validator();
 
     public double add(double firstNumber, double secondNumber) {
         return firstNumber + secondNumber;

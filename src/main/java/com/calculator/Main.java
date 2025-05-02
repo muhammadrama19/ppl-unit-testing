@@ -1,10 +1,10 @@
 package com.calculator;
 
-import com.calculator.components.display;
+import com.calculator.components.Display;
 
 public class Main {
     public static void main(String[] args) {
-        display calc = new display();
+        Display calc = new Display();
         calc.displayHeader();
         calc.input();
     }
