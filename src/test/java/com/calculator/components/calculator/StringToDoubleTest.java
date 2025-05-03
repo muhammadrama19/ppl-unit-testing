@@ -1,16 +1,16 @@
 package com.calculator.components.calculator;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import com.calculator.components.Helper;
 
 public class StringToDoubleTest {
     private Helper helper;
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         helper = new Helper();
     }

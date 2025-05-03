@@ -1,21 +1,22 @@
 package com.calculator.components.display;
 
-import static org.junit.Assert.assertEquals;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.util.Scanner;
 
-import org.junit.Before;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import com.calculator.components.Display;
 
 public class InputTest {
     private Display display;
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         display = new Display();
     }

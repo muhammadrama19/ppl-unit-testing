@@ -1,4 +1,5 @@
 # Ignore all files and folders in the target directory except the site folder
 /target/*
 !/target/site/
+!/target/allure-results/
 .idea

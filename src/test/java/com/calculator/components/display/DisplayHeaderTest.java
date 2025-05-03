@@ -1,12 +1,13 @@
 package com.calculator.components.display;
 
-import static org.junit.Assert.assertEquals;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-import org.junit.Before;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import com.calculator.components.Display;
 
@@ -16,7 +17,7 @@ public class DisplayHeaderTest {
     private final PrintStream originalOut = System.out;
     private final PrintStream originalErr = System.err;
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         display = new Display();
         System.setOut(new PrintStream(outContent));
