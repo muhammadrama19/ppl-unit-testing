@@ -57,19 +57,25 @@ Make sure the following are installed on your system:
    cd ppl-unit-testing
    ```
 
-3. **Run the Tests**
+3. **Clean Up the target folder in case it cached during next test:**
+   This command will clean all target folder.
+   ```bash
+   mvn clean
+   ```
+
+4. **Run the Tests**
    This command will execute the JUnit 5 tests.
    ```bash
    mvn test
    ```
 
-4. **Generate the Allure Report**
+5. **Generate the Allure Report**
    After running the tests, generate the Allure HTML report:
    ```bash
    mvn allure:report
    ```
 
-5. **Open the Report Manually**
+6. **Open the Report Manually**
    After the report is generated, open the following file in a browser:
    ```
    target/site/allure-maven-plugin/index.html
@@ -79,7 +85,7 @@ Make sure the following are installed on your system:
 
      ![How to Open with Live Server](image.png)
 
-6. **Alternative: Serve the Report Automatically**
+7. **Alternative: Serve the Report Automatically**
    Use this command to open the report in your default browser automatically. Note that this method does **not** create a physical `index.html` file:
    ```bash
    mvn allure:serve
