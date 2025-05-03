@@ -3,3 +3,4 @@
 !/target/site/
 !/target/allure-results/
 .idea
+.allure
