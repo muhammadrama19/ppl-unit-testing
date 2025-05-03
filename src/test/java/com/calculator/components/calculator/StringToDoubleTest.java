@@ -16,7 +16,7 @@ public class StringToDoubleTest {
     }
 
     @Test
-    public void testStringValidDecimal() {
+    public void testStringValidDapatDiKonversiKeDouble() {
         // (1) setup data
         String input = "12.5";
 
@@ -28,7 +28,7 @@ public class StringToDoubleTest {
     }
 
     @Test
-    public void testStringInvalidCharacters() {
+    public void testStringTidakValidUntukDiKonversiKeDouble() {
         // (1) setup data
         String input = "garamararam";
 
@@ -40,7 +40,7 @@ public class StringToDoubleTest {
     }
 
     @Test
-    public void testStringValidInteger() {
+    public void testBilanganBulatDalamString() {
         // (1) setup data
         String input = "10";
 
@@ -52,7 +52,7 @@ public class StringToDoubleTest {
     }
 
     @Test
-    public void testStringMixedCharacters() {
+    public void testKombinasiBilanganBulatDanString() {
         // (1) setup data
         String input = "a1a";
 
@@ -64,7 +64,7 @@ public class StringToDoubleTest {
     }
 
     @Test
-    public void testPositiveInteger() {
+    public void testBilanganBulatPositif() {
         // (1) setup data
         String input = "1";
 
@@ -76,7 +76,7 @@ public class StringToDoubleTest {
     }
 
     @Test
-    public void testNegativeInteger() {
+    public void testBilanganBulatNegatif() {
         // (1) setup data
         String input = "-1";
 
@@ -88,7 +88,7 @@ public class StringToDoubleTest {
     }
 
     @Test
-    public void testZero() {
+    public void testBilanganNol() {
         // (1) setup data
         String input = "0";
 
@@ -100,7 +100,7 @@ public class StringToDoubleTest {
     }
 
     @Test
-    public void testPositiveDecimal() {
+    public void testBilanganDesimalPositif() {
         // (1) setup data
         String input = "1.5";
 
@@ -112,7 +112,7 @@ public class StringToDoubleTest {
     }
 
     @Test
-    public void testZeroDecimal() {
+    public void testBilanganDesimalNol() {
         // (1) setup data
         String input = "0.23";
 
@@ -124,7 +124,7 @@ public class StringToDoubleTest {
     }
 
     @Test
-    public void testNegativeDecimal() {
+    public void testBilanganDesimalNegatif() {
         // (1) setup data
         String input = "-1.5";
 

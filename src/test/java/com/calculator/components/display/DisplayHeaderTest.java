@@ -25,8 +25,8 @@ public class DisplayHeaderTest {
     }
 
     @Test
-    public void testDisplayHeader() {
-        // (1) panggil method yang akan di test
+    public void testMenampilkanHeaderKalkulator() {
+        // (1) Panggil method yang akan diuji
         display.displayHeader();
 
         // (2) bandingkan hasilnya dengan yang diharapkan

@@ -16,7 +16,7 @@ public class IsNumberValidTest {
     }
 
     @Test
-    public void testNumberInValidRange() {
+    public void testNumberDalamRangeValid() {
         // (1) setup data
         Object input = 2;
 
@@ -28,7 +28,7 @@ public class IsNumberValidTest {
     }
 
     @Test
-    public void testNumberOutOfRange() {
+    public void testNumberDiLuarRangeValid() {
         // (1) setup data
         Object input = 40000;
 
@@ -40,7 +40,7 @@ public class IsNumberValidTest {
     }
 
     @Test
-    public void testInputNotNumber() {
+    public void testInputBukanNumber() {
         // (1) setup data
         Object input = "abc";
 
@@ -52,7 +52,7 @@ public class IsNumberValidTest {
     }
 
     @Test
-    public void testEdgeNegativeOutOfRange() {
+    public void testEdgeRangeValidMinimumKurang1() {
         // (1) setup data
         Object input = -32769;
 
@@ -64,7 +64,7 @@ public class IsNumberValidTest {
     }
 
     @Test
-    public void testEdgeMinValidRange() {
+    public void testEdgeRangeValidMinimum() {
         // (1) setup data
         Object input = -32768;
 
@@ -76,7 +76,7 @@ public class IsNumberValidTest {
     }
 
     @Test
-    public void testEdgeMinPlusOne() {
+    public void testEdgeRangeValidMinimumTambah1() {
         // (1) setup data
         Object input = -32767;
 
@@ -88,7 +88,7 @@ public class IsNumberValidTest {
     }
 
     @Test
-    public void testEdgeMaxMinusOne() {
+    public void testEdgeRangeValidMaksimumKurang1() {
         // (1) setup data
         Object input = 32766;
 
@@ -100,7 +100,7 @@ public class IsNumberValidTest {
     }
 
     @Test
-    public void testEdgeMaxValidRange() {
+    public void testEdgeRangeValidMaksimum() {
         // (1) setup data
         Object input = 32767;
 
@@ -112,7 +112,7 @@ public class IsNumberValidTest {
     }
 
     @Test
-    public void testEdgeMaxPlusOne() {
+    public void testEdgeRangeValidMaksimumTambah1() {
         // (1) setup data
         Object input = 32768;
 
