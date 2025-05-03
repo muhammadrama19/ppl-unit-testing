@@ -1,6 +1,7 @@
 package com.calculator.components.calculator;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -86,12 +87,16 @@ public class CalculateTest {
         double AngkaKedua = 5;
         Character operator = '?';
         
-        // (2) panggil method yang akan di test
-        double result = calc.calculate(AngkaPertama, AngkaKedua, operator);
+        // (2) panggil method yang akan di test dan tangkap exception
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            calc.calculate(AngkaPertama, AngkaKedua, operator);
+        });
 
         // (3) bandingkan hasilnya dengan yang diharapkan
-        String expected = "Invalid operator. Please enter a valid operator.";
-        assertEquals(result, expected);
+        String expectedMessage = "Invalid operator. Please enter a valid operator.";
+        String actualMessage = exception.getMessage();
+        assertEquals(expectedMessage, actualMessage);
+
 
     }
 
